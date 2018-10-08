@@ -19,6 +19,15 @@ interface ICollidable<T> {
 
 class InputController {
     private Direction _direction;
+    private bool _pauseGame;
+    
+    public bool pauseGame {
+        get {
+            ProcessInput();
+            return _pauseGame;
+        }
+    }
+    
     public Direction direction {
         get {
                 ProcessInput();
@@ -27,7 +36,24 @@ class InputController {
     }
     
     public void ProcessInput() {
-        
+        ConsoleKeyInfo cki = Console.ReadKey(true);
+        switch (cki.Key) {
+            case ConsoleKey.Spacebar: 
+                _pauseGame = !_pauseGame
+                break;
+            case ConsoleKey.UpArray: 
+                _direction = Direction.UP;
+                break;
+            case ConsoleKey.DownArrow: 
+                _direction = Direction.DOWN;
+                break;
+            case ConsoleKey.LeftArrow: 
+                _direction = Direction.LEFT;
+                break;
+            case ConsoleKey.RightArrow: 
+                _direction = Direction.RIGHT;
+                break;
+        }
     }
 }
 
@@ -36,13 +62,28 @@ class GameController {
     public Board board;
     public Snake snake;
     public Apple apple;
+    public bool gameRunning;
+    
+    public void GameLoop() {
+        
+    }
     
     public void GameStart() {
+        board = new Board(Console.WindowWidth, Console.WindowHeight);
+        snake = new Snake(10, 10);
         
+        gameRunning = true;
+        while (gameRunning) {
+            GameLoop();
+        }
     }
     
     public void GameOver() {
         
+    }
+    
+    public void TogglePause() {
+        gameRunning = !gameRunning;
     }
 }
 
@@ -55,8 +96,6 @@ class Apple: Entity, ICollidable<Entity> {
     public void OnCollision(Entity other) {
         
     }
-
-
 }
 
 class Board: Entity, ICollidable<Entity> {
@@ -75,8 +114,7 @@ class Board: Entity, ICollidable<Entity> {
 enum Direction {UP, DOWN, lEFT, RIGHT};
 
 class Snake: Entity, ICollidable<Entity> {
-    public Point[] parts = new Point[4];
-    public int length = 4;
+    public List<Point> parts = new List<Point>();
     
     public void Move(Direction direction) {
         switch (direction)
