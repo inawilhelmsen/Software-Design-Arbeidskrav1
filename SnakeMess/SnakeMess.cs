@@ -14,13 +14,18 @@ class Entity {
 }
 
 interface ICollidable<T> {
-    bool Collision(T other);
     void OnCollision(T other);
 }
 
 class InputController {
-    public Direction _direction;
-
+    private Direction _direction;
+    public Direction direction {
+        get {
+                ProcessInput();
+                return _direction;
+            }
+    }
+    
     public void ProcessInput() {
         
     }
@@ -41,19 +46,29 @@ class GameController {
     }
 }
 
-class Apple: Entity {
+class Apple: Entity, ICollidable<Entity> {
     public Apple(int x, int y){
         position.x = x;
         position.y = y;
     }
+    
+    public void OnCollision(Entity other) {
+        
+    }
+
+
 }
 
-class Board: Entity {
+class Board: Entity, ICollidable<Entity> {
     public int width;
     public int height;
     public Board(int width, int height) {
         this.width = width;
         this.height = height;
+    }
+    
+    public void OnCollision(Entity other) {
+        
     }
 }
 
@@ -77,19 +92,11 @@ class Snake: Entity, ICollidable<Entity> {
         }
     }
 
-    public void OnCollision(Entity other) {
-        
-    }
-
-    public bool Collision(Entity other) {
-        return false;
-    }
-
-    public void Die() {
+    public bool IntersectsWith(Entity other) {
         
     }
     
-    public void Eat() {
+    public void OnCollision(Entity other) {
         
     }
 }
