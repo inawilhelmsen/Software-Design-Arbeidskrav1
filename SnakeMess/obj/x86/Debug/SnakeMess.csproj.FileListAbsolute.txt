@@ -21,3 +21,15 @@ C:\Users\inawi\OneDrive\Documents\GitHub\Software-Design-Arbeidskrav1\Software-D
 C:\Users\inawi\OneDrive\Documents\GitHub\Software-Design-Arbeidskrav1\Software-Design-Arbeidskrav1\SnakeMess\obj\x86\Debug\SnakeMess.csproj.CoreCompileInputs.cache
 C:\Users\inawi\OneDrive\Documents\GitHub\Software-Design-Arbeidskrav1\Software-Design-Arbeidskrav1\SnakeMess\obj\x86\Debug\SnakeMess.exe
 C:\Users\inawi\OneDrive\Documents\GitHub\Software-Design-Arbeidskrav1\Software-Design-Arbeidskrav1\SnakeMess\obj\x86\Debug\SnakeMess.pdb
+E:\skole\software_design\arbeidskrav\Software-Design-Arbeidskrav1-master\SnakeMess\obj\x86\Debug\SnakeMess.csprojResolveAssemblyReference.cache
+E:\skole\software_design\arbeidskrav\Software-Design-Arbeidskrav1-master\SnakeMess\obj\x86\Debug\SnakeMess.csproj.CoreCompileInputs.cache
+E:\skole\software_design\arbeidskrav\Software-Design-Arbeidskrav1-master\SnakeMess\obj\x86\Debug\SnakeMess.exe
+E:\skole\software_design\arbeidskrav\Software-Design-Arbeidskrav1-master\SnakeMess\obj\x86\Debug\SnakeMess.pdb
+E:\skole\software_design\arbeidskrav\Software-Design-Arbeidskrav1-master\SnakeMess\bin\Debug\SnakeMess.exe
+E:\skole\software_design\arbeidskrav\Software-Design-Arbeidskrav1-master\SnakeMess\bin\Debug\SnakeMess.pdb
+E:\skole\software_design\arbeidskrav\git\Software-Design-Arbeidskrav1\SnakeMess\bin\Debug\SnakeMess.exe
+E:\skole\software_design\arbeidskrav\git\Software-Design-Arbeidskrav1\SnakeMess\bin\Debug\SnakeMess.pdb
+E:\skole\software_design\arbeidskrav\git\Software-Design-Arbeidskrav1\SnakeMess\obj\x86\Debug\SnakeMess.csprojResolveAssemblyReference.cache
+E:\skole\software_design\arbeidskrav\git\Software-Design-Arbeidskrav1\SnakeMess\obj\x86\Debug\SnakeMess.csproj.CoreCompileInputs.cache
+E:\skole\software_design\arbeidskrav\git\Software-Design-Arbeidskrav1\SnakeMess\obj\x86\Debug\SnakeMess.exe
+E:\skole\software_design\arbeidskrav\git\Software-Design-Arbeidskrav1\SnakeMess\obj\x86\Debug\SnakeMess.pdb
